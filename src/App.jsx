@@ -40,7 +40,12 @@ function App() {
             value={newTitle}
             onChange={(event) => setNewTitle(event.target.value)}
           />
-          <button type="submit">Crea Post</button>
+          <button
+            type="submit"
+            className="btn submit"
+          >
+            Crea Post
+          </button>
         </form>
 
         <ul className="container">
@@ -51,6 +56,7 @@ function App() {
             >
               <h2>{curPost}</h2>
               <button
+                className="btn remove"
                 onClick={() => {removePost(curPost)}}
               >
                 <i className="fa-solid fa-trash"></i>

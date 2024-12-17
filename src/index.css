@@ -36,11 +36,40 @@ header {
 /* Form */
 label {
   font-weight: bold;
+  font-style: italic;
 }
 
 input {
-  padding: 10px;
+  width: 50%;
+  padding: 5px;
   margin: 20px 0;
+}
+
+.btn {
+  padding: 10px;
+  color: #ffffff;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.submit {
+  background-color: #4747f7;
+  border-radius: 10px;
+}
+
+.remove {
+  width: 40px;
+  height: 40px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.btn.submit:hover {
+  background-color: #3636d1; /* Un blu più scuro */
+}
+
+.btn.remove:hover {
+  background-color: #d60000; /* Un rosso più scuro */
 }
 
 /* Card */
@@ -49,4 +78,7 @@ input {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
