@@ -50,6 +50,7 @@ input {
   color: #ffffff;
   border: 1px solid #000000;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .submit {
@@ -65,20 +66,34 @@ input {
 }
 
 .btn.submit:hover {
-  background-color: #3636d1; /* Un blu più scuro */
+  background-color: #3636d1; 
 }
 
 .btn.remove:hover {
-  background-color: #d60000; /* Un rosso più scuro */
+  background-color: #d60000; 
 }
 
 /* Card */
 .card {
+  width: 80%;
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+.uppercard {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.empty-list {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+span {
+  font-style: italic;
 }
