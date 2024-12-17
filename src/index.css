@@ -1,0 +1,40 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COMMON */
+/* Layout */
+.container {
+  margin: 0 auto;
+  width: 80%; 
+}
+
+.row {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #ececec;
+  padding: 20px;
+}
+
+/* Form */
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  margin: 20px 0;
+}
