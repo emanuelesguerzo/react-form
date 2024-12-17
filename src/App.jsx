@@ -7,6 +7,13 @@ function App() {
   const handleNewPostSubmit = (event) => {
     event.preventDefault();
 
+    if (newTitle.trim() === "" || posts.includes(newTitle)) {
+      const message = newTitle.trim() === "" 
+        ? "Aggiungi un titolo" 
+        : "Titolo già presente";
+      return alert(message);
+    }
+
     const newArray = [...posts, newTitle];
     setPosts(newArray);
     setNewTitle("");
@@ -36,9 +43,12 @@ function App() {
           <button type="submit">Crea Post</button>
         </form>
 
-        <ul>
+        <ul className="container">
           {posts.map((curPost, index) => (
-            <li key={index}>
+            <li 
+              key={index}
+              className="card"
+            >
               <h2>{curPost}</h2>
               <button
                 onClick={() => {removePost(curPost)}}
